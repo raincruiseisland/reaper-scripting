@@ -1,0 +1,17 @@
+.media-container {
+  max-height: var(--media-container-max-height);
+  opacity: .75;
+  border-radius: var(--radius-small);
+  overflow: hidden;
+}
+
+.media-container[data-varient="image"] img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.media-container[data-dimmed] {
+  filter: grayscale(1);
+  opacity: .2;
+}

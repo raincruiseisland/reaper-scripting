@@ -1,0 +1,7 @@
+.wrapper {
+  --padding: var(--gutter);
+  --max-width: 1275px;
+
+  width: min(calc(100% - var(--padding) * 2), var(--max-width));
+  margin-inline: auto;
+}

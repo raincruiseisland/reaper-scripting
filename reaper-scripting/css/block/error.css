@@ -1,0 +1,8 @@
+.error {
+  --flow-space: var(--space-medium);
+  text-align: center;
+}
+
+.error p {
+  margin-inline: auto;
+}
