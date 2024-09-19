@@ -1,0 +1,15 @@
+.comment {
+  color: hsl(var(--color-neutral-base-dimmed));
+}
+
+.function {
+  color: hsl(var(--color-primary-base));
+}
+
+.variable {
+  color: hsl(var(--color-secondary-base));
+} 
+
+.punctuation {
+  color: hsl(var(--color-neutral-base));
+}
