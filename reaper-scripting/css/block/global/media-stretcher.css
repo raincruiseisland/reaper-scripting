@@ -1,7 +1,0 @@
-.media-stretcher {
-  display: flex;
-  flex-direction: column;
-}
-.media-stretcher > .media-container {
-  flex: 1;
-}
