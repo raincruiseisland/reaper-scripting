@@ -1,0 +1,12 @@
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--auto-grid-placement, auto-fit), minmax(var(--auto-grid-min-size, min(100%, 16rem)), 1fr));
+  align-items: var(--auto-grid-align-vert, stretch);
+  gap: var(--auto-grid-gap, var(--gutter));
+}
+.auto-grid[data-layout="double"] {
+  --auto-grid-min-size: clamp(min(100%, 16rem), 50vw, 26rem);
+}
+.auto-grid li > .card {
+  height: 100%;
+}

@@ -1,0 +1,3 @@
+- make wrapper default container
+- add in aria stuff / alts / @supports
+- clean up what needs to be a variable

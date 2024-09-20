@@ -1,0 +1,9 @@
+.courses-spotlight {
+  --switcher-column-gap: var(--space-medium);
+}
+
+@container (min-width: 45rem) {
+  .courses-spotlight > :not(hr) {
+    padding-block: var(--space-small);
+  }
+}
