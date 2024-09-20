@@ -1,0 +1,4 @@
+.line-break {
+  display: block;
+  margin-top: var(--line-break-space, 1em);
+}

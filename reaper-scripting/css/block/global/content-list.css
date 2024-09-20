@@ -1,0 +1,12 @@
+.content-list li {
+  padding-block: var(--space-small);
+}
+
+.content-list p {
+  margin: 0;
+}
+
+.content-list li:not(:nth-of-type(even)) {
+  --stroke-color: hsl(var(--color-neutral-dark-glare));
+  border-block: var(--stroke-fine) var(--stroke-color);
+}
