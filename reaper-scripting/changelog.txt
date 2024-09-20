@@ -1,2 +1,0 @@
-- Add in aria / alt text / @supports.
-- Clean up what needs to be a variable and what doesn't.
