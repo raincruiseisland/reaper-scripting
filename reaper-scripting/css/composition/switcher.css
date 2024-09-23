@@ -1,0 +1,19 @@
+/* registers if the browser supports @container. Stops rulesets applying that interfere with other workarounds */
+@supports (container-type: inline-size) {
+  .switcher {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: var(--switcher-align-vertical, stretch);
+    column-gap: var(--switcher-column-gap, var(--gutter));
+    row-gap: var(--switcher-row-gap, var(--gutter));
+  }
+  
+  .switcher > * {
+    flex-grow: 1;
+    flex-basis: calc((var(--threshold, 45rem) - 100%) * 999);
+  }
+
+  .switcher:has(> hr) > :not(hr) {
+    flex-grow: 999;
+  }
+}

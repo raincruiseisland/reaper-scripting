@@ -1,0 +1,9 @@
+.spotlight {
+  --switcher-column-gap: var(--space-medium);
+}
+
+@container (min-width: 45rem) {
+  .spotlight > :not(hr) {
+    padding-block: var(--space-small);
+  }
+}

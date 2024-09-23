@@ -1,0 +1,11 @@
+.content-list li {
+  padding-block: var(--space-small);
+}
+
+.content-list p {
+  margin: 0;
+}
+
+.content-list li:not(:nth-of-type(even)) {
+  border-block: 1px solid hsl(var(--color-neutral-base-dimmed));
+}

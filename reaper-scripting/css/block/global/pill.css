@@ -1,0 +1,10 @@
+.pill {
+  padding: var(--pill-padding);
+  border-width: var(--pill-stroke-width);
+  border-style: var(--pill-stroke-style);
+  border-color: hsl(var(--pill-stroke-color));
+  font-weight: var(--pill-font-weight);
+  border-radius: 0 var(--pill-radius);
+  color: hsl(var(--pill-color));
+  text-transform: uppercase;
+}

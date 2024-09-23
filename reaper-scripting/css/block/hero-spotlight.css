@@ -1,0 +1,25 @@
+.hero-spotlight {
+  display: grid;
+  gap: var(--gutter);
+}
+
+.hero-spotlight .media-container {
+  animation-delay: 1s;
+}
+
+@container (min-width: 45rem) { 
+  .hero-spotlight {
+    grid-template-columns: [text-start] 1fr [decor-start] .55fr [text-end] 1fr [decor-end];
+    grid-template-rows: [decor-start] var(--image-gutter) [text-start] 1fr [text-end] var(--image-gutter) [decor-end];
+  }
+
+  .hero-spotlight__text {
+    grid-area: text;
+    align-self: center;
+  }
+  
+  .hero-spotlight__decor {
+    grid-area: decor;
+    z-index: -1;
+  }
+}

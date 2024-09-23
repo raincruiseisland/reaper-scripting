@@ -1,0 +1,18 @@
+.card {
+  padding: var(--container-padding); 
+  border-radius: var(--container-radius);
+  background-color: hsl(var(--container-background));
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__content > :has(+ .cluster) {
+  flex: 1;
+}
+
+.card .cluster {
+  --flow-space: var(--space-medium);
+}

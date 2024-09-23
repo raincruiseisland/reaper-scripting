@@ -1,0 +1,6 @@
+- Add in aria / alt text / @supports.
+- Fix spacing issues when shrinking terminals & cards
+- Add border names for ones not hooked to variables
+- Add terminal play button hover effect back
+- Hook up border values together - possibly??
+- Increase hue of footer small text/comment text

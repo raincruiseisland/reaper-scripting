@@ -1,0 +1,67 @@
+@keyframes spin-in {
+  0% {
+    scale: 0;
+  }
+  100% {
+    rotate: 360deg;
+    scale: 1;
+  }
+}
+[data-animation="spin-in"] {
+  animation: spin-in 1.15s ease-in-out;
+}
+
+@keyframes pop-out {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+[data-animation="pop-out"] {
+  animation: pop-out 1s both cubic-bezier(.47,1.64,.41,.8);
+}
+
+@keyframes bob {
+  0% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+[data-animation="bob"] {
+  animation: bob 1.45s infinite alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(10px);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+[data-animation="shake"] {
+  animation: shake 545ms both ease-in-out;
+}
+
+
+@media (prefers-reduced-motion) {
+  [data-animation="spin-in"],
+  [data-animation="pop-out"],
+  [data-animation="bob"],
+  [data-animation="shake"] {
+    animation: none !important;
+  }
+}

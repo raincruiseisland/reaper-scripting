@@ -1,0 +1,51 @@
+.button {
+  display: inline-block;
+  padding: var(--button-padding);
+  border-width: var(--button-stroke-width);
+  border-style: var(--button-stroke-style);
+  border-color: hsl(var(--button-stroke-color));
+  border-radius: var(--button-radius);
+  font-weight: var(--button-font-weight);
+  background-color: hsl(var(--button-background));
+  color: hsl(var(--button-color));
+  line-height: 1.1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+.button:not([data-varient], [data-unavailable], .skip-link):hover {
+  transform: translateY(-5px);
+}
+.button svg path[stroke] {
+  stroke: hsl(var(--svg-stroke-color));
+}
+
+.button[data-varient="small"] {
+  --button-stroke-color: currentColor;
+  --button-color: var(--color-neutral-glare);
+  --button-background: transparent;
+  font-size: var(--text-miniscule);
+}
+.button[data-varient="small"]:hover {
+  filter: invert(1); /* fix later */
+}
+
+.button[data-varient="svg"] {
+  --button-padding: 0;
+  --button-stroke-width: 0;
+  --button-stroke-style: none;
+  --button-stroke-color: transparent;
+  --button-background: transparent;
+}
+
+.button[data-unavailable] {
+  pointer-events: none;
+}
+.button[data-unavailable]:not(:has(> svg)) {
+  --button-stroke-color: var(--color-disabled);
+  --button-color: var(--color-neutral-shade);
+  --button-background: var(--color-disabled);
+}
+.button[data-unavailable]:has(> svg) {
+  --svg-stroke-color: var(--color-disabled);
+}

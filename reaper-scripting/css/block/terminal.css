@@ -1,0 +1,38 @@
+.terminal {
+  font-family: var(--font-mono-base);
+  border-radius: var(--container-radius);
+  background-color: hsl(var(--container-background));
+}
+
+.terminal :is(h3, h4) {
+  --heading-font: var(--font-mono-secondary);
+}
+.terminal :is(h3, h4)::before {
+  content: ">_";
+  margin-inline-end: 0.5ch;
+}
+
+.terminal header {
+  padding: var(--container-padding);
+  border-bottom-width: var(--base-stroke-width);
+  border-bottom-style: var(--base-stroke-style);
+  border-bottom-color: hsl(var(--base-stroke-color));
+}
+
+.terminal .button {
+  --svg-stroke-color: var(--color-secondary-base);
+}
+
+.terminal__spotlight {
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal__content {
+  padding: var(--container-padding);
+}
+
+.terminal .media-container {
+  width: 100%;
+  flex: 1;
+}

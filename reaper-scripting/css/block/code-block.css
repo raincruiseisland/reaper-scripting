@@ -1,0 +1,36 @@
+.code-block {
+  --flow-space: var(--space-medium);
+  padding: var(--container-padding);
+  border-radius: var(--container-radius);
+  background-color: hsl(var(--container-background));
+  color: hsl(var(--color-neutral-glare));
+  position: relative;
+  text-align: left;
+}
+
+.code-block:not(:only-child) {
+  margin-block-start: var(--space-medium);
+}
+
+.code-block__language {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.code-block pre {
+  tab-size: var(--pre-tab-size);
+  scrollbar-width: var(--scrollbar-width);
+  overflow-x: scroll;
+}
+
+.code-block code {
+  line-height: var(--leading-large);
+}
+.code-block span:has(> input) {
+  line-height: var(--leading-loose);
+}
+
+.code-block input {
+  width: var(--measure-short);
+}

@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--nav-gap, var(--gutter));
+}
+
+.nav a:not([data-active]):not(:hover) {
+  text-decoration: none;
+}
+
+.nav a[data-active] {
+  text-decoration: underline;
+  text-decoration-color: hsl(var(--link-underline-color));
+}

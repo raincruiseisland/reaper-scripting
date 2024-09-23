@@ -1,0 +1,13 @@
+.media-container {
+  max-height: var(--media-container-max-height);
+}
+
+.media-container[data-varient="image"] img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.media-container[data-dimmed] img {
+  filter: grayscale(1) brightness(0.3);
+}

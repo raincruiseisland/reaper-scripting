@@ -1,0 +1,60 @@
+
+/* Flow space */
+.flow-miniscule {
+  --flow-space: var(--space-miniscule);
+}
+.flow-extra-small {
+  --flow-space: var(--space-extra-small);
+}
+.flow-small {
+  --flow-space: var(--space-small);
+}
+.flow-medium {
+  --flow-space: var(--space-medium);
+}
+.flow-large {
+  --flow-space: var(--space-large);
+}
+.flow-extra-large {
+  --flow-space: var(--space-extra-large);
+}
+.flow-mega {
+  --flow-space: var(--space-mega);
+}
+
+/* Region space */
+.region-miniscule {
+  --region-space: var(--space-miniscule);
+}
+.region-extra-small {
+  --region-space: var(--space-extra-small);
+}
+.region-small {
+  --region-space: var(--space-small);
+}
+.region-medium {
+  --region-space: var(--space-medium);
+}
+.region-large {
+  --region-space: var(--space-large);
+}
+.region-extra-large {
+  --region-space: var(--space-extra-large);
+}
+.region-mega {
+  --region-space: var(--space-mega);
+}
+
+/* Icon sizes */
+.icon-extra-small {
+  width: var(--icon-extra-small);
+}
+.icon-small {
+  width: var(--icon-small);
+}
+.icon-m {
+  width: var(--icon-medium);
+}
+.icon-l {
+  width: var(--icon-large);
+}
